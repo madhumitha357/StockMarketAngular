@@ -1,0 +1,74 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+</head>
+<body>
+
+  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:rgb(5, 55, 102); color :  rgb(247, 235, 235);">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/"><b>Home</b><span class="sr-only">(current)</span></a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/Nifty"><b>NSE(Nifty)</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/Sensex"><b>BSE(Sensex)</b></a>
+                </li>
+                
+                
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        
+      
+      <div id="intro" class="view">
+
+          <div class="mask rgba-black-strong">
+
+              <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                  <div class="row d-flex justify-content-center text-center">
+
+                      <div class="col-md-10">
+
+                          <!-- Heading -->
+                          <h2 class="display-4 font-weight-bold white-text pt-5 mb-2" style="color: white;">Stock Market</h2>
+
+                          <!-- Divider -->
+                          <hr class="hr-light">
+
+                          <!-- Description -->
+                          <button routerLink="/login" id="myButton" (click)="login()" class="btn btn-info block" >Login</button>
+                          
+                          <button routerLink="/register" id="myButton" class="btn btn-info block" >Register</button>
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+      <!--/.Mask-->
+
+  </header>
+  
+</body>
+</html>

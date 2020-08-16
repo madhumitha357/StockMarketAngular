@@ -1,0 +1,48 @@
+
+<body>
+
+    <div class="container">
+        <div class="frame">
+        
+            <h4><b>Sensex</b></h4>
+            <div class ="row">
+                <div class="col">
+            <h2><b>{{n}}</b></h2>
+            <b style="color:teal">{{p}}</b>
+            <p style="color:grey;">As on {{dates[dates.length -1]}}</p>
+        </div>
+        <div class="col">
+                <label for="vol">Day Range:</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+                <label for="vol">52 week Range:</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+        </div>
+        </div>
+            <p><b>Overview</b></p>
+            <table style="width:100%">
+
+                <tr>
+                  <td style="color: rgb(105, 103, 103);">Open</td>
+                  <td style="color: black;">{{open[open.length-1]}}</td>
+                  <td style="color: rgb(105, 103, 103);">Day Low</td>
+                  <td style="color: black;">{{low[low.length-1]}}</td>
+                </tr><br>
+                <tr>
+                  <td style="color: rgb(105, 103, 103);">Previous close</td>
+                  <td style="color: black;">{{close[close.length-2]}}</td>
+                  <td style="color: rgb(105, 103, 103);">52 week high</td>
+                  <td style="color: black;">{{high[high.length-1]}}</td>
+
+                </tr><br>
+                <tr>
+                  <td style="color: rgb(105, 103, 103);">Day High</td>
+                  <td style="color: black;">{{high[high.length-1]}}</td>
+                  <td style="color: rgb(105, 103, 103);">52 Week Low</td>
+                  <td style="color: black;">{{low[low.length-1]}}</td>
+                </tr>
+              </table> 
+    </div>
+    </div>
+    
+    </body>
+    

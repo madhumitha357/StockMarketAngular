@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+
+body {
+    background:  url(https://cdn2.stylecraze.com/wp-content/uploads/2013/07/1211_25-Most-Beautiful-Blue-Flowers_174945887.jpg_1.jpg) no-repeat center center fixed;
+    background-size: cover
+     
+}
+
+.container {
+    width: 300px;
+    
+    padding-top: 60px;
+    padding-bottom: 500px;
+    
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.frame {
+	padding-top: 60px;
+    padding-bottom: 500px;
+    height: 665px;
+    width: 530px;
+    background-size: cover;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: solid 1px rgba(255, 255, 255, .5);
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: all .5s ease
+}

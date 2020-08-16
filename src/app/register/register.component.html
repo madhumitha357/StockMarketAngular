@@ -1,0 +1,55 @@
+
+<body>
+
+    <div class="container">
+        <div class="frame">
+        
+            
+    <form class="text-center border border-light p-5" action="#!" #registerForm="ngForm" (ngSubmit)="register(registerForm.value)" novalidate>
+    
+        <p class="h4 mb-4 " style="color:green;"><b>Register</b></p>
+    
+                <!-- First name -->
+        <!--<div class="form-group" [ngClass]="{'has-error' : registerForm.get('residentId').errors }">-->
+       
+            
+                <!-- Last name -->
+        <input type="text" name="name" [(ngModel)]='user.name'  id="defaultRegisterFormLastName" required
+        maxlength=10 minlength=4  class="form-control mb-4" placeholder="Enter name">
+        
+            
+        <!-- E-mail -->
+        <input type="text"  name="gender" [(ngModel)]='user.gender'  id="defaultRegisterFormEmail" required
+        maxlength=6 minlength=1   class="form-control mb-4" placeholder="Gender">
+        
+    
+        <!-- Password -->
+        <input type="text" name="mobile" [(ngModel)]='user.mobile'  id="defaultRegisterFormPassword" required
+        maxlength=10 minlength=10 class="form-control mb-4" placeholder="Mobile" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        
+        <!-- Password -->
+        <input type="text" name="email" [(ngModel)]='user.email'  id="defaultRegisterFormPassword" required
+         class="form-control mb-4" placeholder="Email" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+       
+        
+        
+        <input type="text" name="password" [(ngModel)]='user.password' id="defaultRegisterFormPassword"  required
+        maxlength=10 minlength=8 class="form-control mb-4" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+        
+    
+        
+    
+        <!-- Sign up button -->
+        <button class="btn btn-success my-4 btn-block"   type="submit" >Register</button>
+    
+        
+    
+        <!-- Terms of service -->
+        
+    
+    </form>
+    </div>
+    </div>
+    
+    </body>
+    
